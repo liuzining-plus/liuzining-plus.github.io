@@ -1120,6 +1120,12 @@ article .content h2:before {
   font-weight: bold;
   font-size: 1.2rem;
 }
+article .content code {
+  background: #2d2d2d;
+  border: none;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
 article .content img,
 article .content video {
   display: block;

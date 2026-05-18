@@ -14,7 +14,7 @@
 <meta property="og:description" content="我原来看过数电的教科书，我看上面的三种码制（原码 反码 补码）完全没有意识到这是干啥的，书上说是为了方便计算机的运算，我也没太大的感触，只是把这三个码制，生硬的记了下来。   今天我用logisim去仿真，在仿全加器的时候还是很轻松啊。然后我依照书中的知识将减法运算换为了利用补码的形式，去变换全加器。假设 A-B 当A&gt;B 时 我减法器运算正常（设A&#x3D;5 B&#x3D;3 结果">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-05-18T15:00:47.000Z">
-<meta property="article:modified_time" content="2026-05-18T15:34:50.782Z">
+<meta property="article:modified_time" content="2026-05-18T15:37:28.463Z">
 <meta property="article:author" content="zining liu">
 <meta name="twitter:card" content="summary">
     
@@ -152,7 +152,7 @@
   <div class="content e-content" itemprop="articleBody">
     <p>  我原来看过数电的教科书，我看上面的三种码制（原码 反码 补码）完全没有意识到这是干啥的，书上说是为了方便计算机的运算，我也没太大的感触，只是把这三个码制，生硬的记了下来。</p>
 <p>  今天我用logisim去仿真，在仿全加器的时候还是很轻松啊。然后我依照书中的知识将减法运算换为了利用补码的形式，去变换全加器。假设 <strong>A-B</strong> 当A&gt;B 时 我减法器运算正常（设A&#x3D;5 B&#x3D;3 结果为2）有一位溢出，当A&lt;B时 （设A&#x3D;3 B&#x3D;7） 把等式变为 3 加 -7 的补码 此时的结果为C 。 当时我想应该为4啊（显示的时候我忽略了符号），不是应该有一位溢出了吗。然后我空想了一会，重新学习了一下 ，这叫<strong>负数的模等价</strong> -4+16&#x3D;C</p>
-<p>  然后我还了解了一下反码加法器，了解完后，我感觉补码好方便啊（感谢前人智慧）。过几天，我抽时间整理一下，详细的解释一下减法的进化历程，从原码运算到反码运算再到我们现在常用的补码运算，和进化过程上的好处</p>
+<p>  然后我还了解了一下反码加法器，了解完后，我感觉补码好方便啊（感谢前人智慧）。过几天，我抽时间整理一下，详细的介绍一下减法的进化历程，从原码运算到反码运算再到我们现在常用的补码运算，和进化过程上的好处</p>
 <p>  应该是原来学的不仔细，没发现这个问题。 给我的感觉是，实践的过程中可以发现原来忽略的问题。</p>
 
   </div>

@@ -75,5 +75,5 @@ theme_config:
     start_year: 2026
 deploy:
   type: git
-  repo: https://github.com/liuzining-plus/liuzining-plus.github.io.git
+  repo: git@github.com:liuzining-plus/liuzining-plus.github.io.git
   branch: main

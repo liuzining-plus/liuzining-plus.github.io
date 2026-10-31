@@ -46,7 +46,7 @@ npm.cmd run build
 npm.cmd run deploy
 ```
 
-此命令会构建并推送网页到 GitHub，改变线上博客；本次环境恢复没有执行发布。首次发布可能需要通过 Git Credential Manager 登录 GitHub。GitHub 连接器的登录不会自动授权本机 Git 推送。
+此命令会构建并推送网页到 GitHub，改变线上博客。认证走 SSH 密钥（`~/.ssh/id_ed25519`，已在 GitHub 注册），不需要输入密码或登录 Git Credential Manager；`deploy.repo` 与 `origin` 的 push 地址都已设为 `git@github.com:...`。
 
 当前工作分支是 `source`，用来保存配置、文章和主题；`main` 是原来的发布分支。不要把写作源码直接推送到 `main`。建议定期备份源码：
 
@@ -56,7 +56,15 @@ git commit -m "更新博客源码"
 git push -u origin source
 ```
 
-本次尚未提交或推送 `source`。新电脑获取源码时，克隆 `source` 分支并运行 `npm.cmd ci`；不要只克隆包含网页的 `main`。
+`source` 已推送到 `origin/source`，2026-10-31 完成。新电脑获取源码时，克隆 `source` 分支并安装依赖；不要只克隆包含网页的 `main`：
+
+```powershell
+git clone -b source git@github.com:liuzining-plus/liuzining-plus.github.io.git hexo
+cd hexo
+npm.cmd ci
+```
+
+`node_modules/`、`public/`、`db.json`、`.recovery/` 都不进版本库，靠 `npm.cmd ci` 和 `hexo generate` 重新生成。
 
 如果本机 Git 尚未设置身份，可只为本仓库设置：
 

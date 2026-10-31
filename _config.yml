@@ -1,0 +1,79 @@
+title: Because Why Not
+subtitle: ''
+description: A series of 0s, 1s, and mistakes
+author: zining liu
+language: en
+timezone: Asia/Shanghai
+url: https://liuzining-plus.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults: {}
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+skip_render: []
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: []
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: false
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+default_category: uncategorized
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: date
+per_page: 10
+pagination_dir: page
+theme: cactus
+theme_config:
+  colorscheme: dark
+  projects_url: https://github.com/liuzining-plus
+  logo:
+    enabled: true
+    url: https://cdn.skyimg.net/up/2026/5/17/dc6ce42b.webp
+  cdn:
+    enable: false
+  nav:
+    home: /
+    about: /about/
+    articles: /archives/
+    projects: https://github.com/liuzining-plus
+    friends: /friends/
+  social_links:
+    - icon: github
+      link: https://github.com/liuzining-plus
+    - icon: mail
+      link: mailto:2700024071@qq.com
+  posts_overview:
+    show_all_posts: true
+    post_count: 10
+  copyright:
+    start_year: 2026
+deploy:
+  type: git
+  repo: https://github.com/liuzining-plus/liuzining-plus.github.io.git
+  branch: main

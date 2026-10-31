@@ -1,0 +1,38 @@
+{
+  "name": "because-why-not-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Because Why Not — Hexo writing sources",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "start": "hexo server --ip 127.0.0.1 --port 14000",
+    "dev": "hexo server --ip 127.0.0.1 --port 14000 --draft",
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "new": "hexo new post",
+    "draft": "hexo new draft",
+    "publish": "hexo publish",
+    "deploy": "hexo clean && hexo generate && hexo deploy"
+  },
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "dependencies": {
+    "hexo": "8.1.2",
+    "hexo-deployer-git": "4.0.0",
+    "hexo-generator-archive": "2.0.0",
+    "hexo-generator-category": "2.0.0",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-tag": "2.0.0",
+    "hexo-renderer-ejs": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-renderer-stylus": "3.0.1",
+    "hexo-server": "3.0.0"
+  },
+  "devDependencies": {
+    "cheerio": "1.2.0",
+    "turndown": "7.2.4"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+public/
+.deploy_git/
+db.json
+.recovery/
+*.log
+Typora_Hook_Log.txt
+.DS_Store
